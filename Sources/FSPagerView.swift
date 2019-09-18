@@ -527,6 +527,11 @@ open class FSPagerView: UIView,UICollectionViewDataSource,UICollectionViewDelega
         self.collectionView.setContentOffset(contentOffset, animated: animated)
     }
     
+    @objc(setContentOffsetContentOffset:animated:)
+    open func setContentOffset(_ contentOffset: CGPoint, animated: Bool) {
+        self.collectionView.setContentOffset(contentOffset, animated: animated)
+    }
+    
     /// Returns the index of the specified cell.
     ///
     /// - Parameter cell: The cell object whose index you want.
